@@ -1,0 +1,29 @@
+{
+  "name": "hacking-of-the-dead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mkearns/hacking-of-the-dead.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mkearns/hacking-of-the-dead/issues"
+  },
+  "homepage": "https://gitlab.com/mkearns/hacking-of-the-dead#README",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,151 @@
+Keymap translation
+
+This file is just a load of rough notes I made in working out the translations.
+It's kept here for posterity, but can be deleted if its contents are judged
+to be adaquately covered elsewhere.
+
+
+First block
+
+00 = A
+02 = C
+03 = B
+04 = E
+05 = D
+
+61 = 20
+
+3B = z
+
+Note: the below translation can be done with
+// const convertFirstBlockByte = (b) => {
+// 	const translated = (b+0x41) & 0xFF;
+// 	return translated % 2 === 0 ? translated-2 : translated;
+// }
+
+// const revertFirstBlockByte = (b) => {
+// 	const fudged = b % 2 === 0 ? b+2 : b;
+// 	return (fudged-0x41) & 0xFF;
+// }
+
+but we use hard coded alphabets for clarity and consistenty with the
+wacky fun out of second block translations
+
+[ '0: A',
+      '1: @',
+      '2: C',
+      '3: B',
+      '4: E',
+      '5: D',
+      '6: G',
+      '7: F',
+      '8: I',
+      '9: H',
+      'a: K',
+      'b: J',
+      'c: M',
+      'd: L',
+      'e: O',
+      'f: N',
+      '10: Q',
+      '11: P',
+      '12: S',
+      '13: R',
+      '14: U',
+      '15: T',
+      '16: W',
+      '17: V',
+      '18: Y',
+      '19: X',
+      '1a: [',
+      '1b: Z',
+      '1c: ]',
+      '1d: \\',
+      '1e: _',
+      '1f: ^',
+      '20: a',
+      '21: `',
+      '22: c',
+      '23: b',
+      '24: e',
+      '25: d',
+      '26: g',
+      '27: f',
+      '28: i',
+      '29: h',
+      '2a: k',
+      '2b: j',
+      '2c: m',
+      '2d: l',
+      '2e: o',
+      '2f: n',
+      '30: q',
+      '31: p',
+      '32: s',
+      '33: r',
+      '34: u',
+      '35: t',
+      '36: w',
+      '37: v',
+      '38: y',
+      '39: x',
+      '3a: {',
+      '3b: z',
+
+second block
+
+
+
+AB = space
+
+
+CAPITALS
+To get to ascii
+Subtract 0xAC
+Add 2 to evens
+
+EC = B
+ED = A
+EE = D?
+EF = C
+FA = P
+FB
+FC
+FD
+FE = T
+FF = S
+80 = V
+81? = U
+82? = X
+83 = W
+84 = Z
+
+LOWERCASE
+To get to ascii
+Subtract 0x26
+Add 2 to evens
+
+86 = b
+87 = a
+88 = 
+89 =
+8A = 
+8B = e
+8C = h
+8D
+8E
+8F
+90 = l
+95 = o
+98 = t
+99 = s
+
+9E = z
+9F = y
+
+
+FA = P
+87 = a
+99 = s
+98 = t
+87 = a

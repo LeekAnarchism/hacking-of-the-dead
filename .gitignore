@@ -1,0 +1,22 @@
+# TTOTD stuff we don't want to commit as we're not hacking it
+*.exe
+cam/
+coli/
+evt/
+mot/
+pol/
+sound/
+tex/
+
+# TTOTD stuff we don't want to commit publicly.
+# You may wish to un-ignore these for your own version, but
+# these files shouldn't be shared publicly.
+word/
+transformed-word/
+
+# My garbage
+word-backup/
+tools/
+
+# NPM
+node_modules/

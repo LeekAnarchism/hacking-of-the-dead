@@ -1,0 +1,4 @@
+# This folder is used by the tests, so ensure
+# it exists but don't commit its files
+*
+!.gitignore
